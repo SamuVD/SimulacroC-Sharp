@@ -46,15 +46,21 @@ public class User
         return $"ID: {Id}, Nombre: {Name} {LastName}, Tipo de documento: {TypeDocument}, Número de identificación: {IdentificationNumber}, Fecha de nacimiento: {BirthDate}, Email: {Email}, Teléfono: {PhoneNumber}, Dirección: {Adreess}";
     }
 
-    // Método para calcular la edad del usuario con DateOnly
-    // protected int CalculateAge()
-    // {
-
-    // }
+    // Método para calcular la edad del usuario
+    protected int CalculateAge()
+    {
+        return DateTime.Now.Year - BirthDate.Year;
+    }
+    
+    // Método para mostrar la edad del usuario
+    public int ShowAgeCalculated()
+    {
+        return CalculateAge();
+    }
 
     // Método para mostrar la edad del usuario
-    protected void ShowAge()
-    {
+    // protected void ShowAge()
+    // {
         
-    }
+    // }
 }
