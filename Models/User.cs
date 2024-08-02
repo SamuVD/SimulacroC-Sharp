@@ -40,13 +40,13 @@ public class User
     // Métodos requeridos para el programa propios de esta clase
 
 
-    // Método para mostrar los detalles de cada usuario
-    protected void ShowDetails()
+    // Método ToString para mostrar los detalles
+    public override string ToString()
     {
-
+        return $"ID: {Id}, Nombre: {Name} {LastName}, Tipo de documento: {TypeDocument}, Número de identificación: {IdentificationNumber}, Fecha de nacimiento: {BirthDate}, Email: {Email}, Teléfono: {PhoneNumber}, Dirección: {Adreess}";
     }
 
-    // Método para calcular la edad del usuario
+    // Método para calcular la edad del usuario con DateOnly
     // protected int CalculateAge()
     // {
 

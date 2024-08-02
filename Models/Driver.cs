@@ -86,6 +86,7 @@ public class Driver : User
         )
     };
 
+
     // ToString
     public override string ToString()
     {
@@ -130,19 +131,21 @@ public class Driver : User
     }
 
     // Método para agregar años de experiencia al conductor
-    public void AddExperience(int years)
+    public void AddExperience()
     {
         Console.Write("\nIngrese el nombre del conductor para el cual desea agregar años de experiencia => ");
         string driverNameExperience = Console.ReadLine().ToLower();
 
         var driverFoundExperience = drivers.FirstOrDefault(item => item.Name == driverNameExperience);
 
-        if (driverFoundExperience!= null)
+        if (driverFoundExperience != null)
         {
+            Console.WriteLine(driverFoundExperience);
             Console.Write("\nIngrese los nuevos años de experiencia del conductor => ");
-            driverFoundExperience.DrivingExperience = Convert.ToInt32(Console.ReadLine());
-            
+            driverFoundExperience.DrivingExperience += Convert.ToInt32(Console.ReadLine());
+
             Console.WriteLine($"\nAÑOS DE EXPERIENCIA AGREGADOS CON ÉXITO!\n");
+            Console.WriteLine(driverFoundExperience);
         }
         else
         {

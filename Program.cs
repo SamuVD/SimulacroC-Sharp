@@ -1,9 +1,7 @@
 ﻿using SimulacroC_Sharp.Models;
 
-var conductor = Driver.drivers[0];
-Console.WriteLine(conductor);
-conductor.UpdateLicenseCategory();
-Console.WriteLine(conductor);
+var conductor = Customer.customers[0];
+conductor.UpdateMembershipLevel();
 
 
 // while (true)
@@ -11,7 +9,7 @@ Console.WriteLine(conductor);
 //     try
 //     {
 //         Console.Clear();
-//         Console.Write(@"
+//         Console.WriteConsole.Write("\nIngrese los nuevos años de experiencia del conductor => ");(@"
 // #############################################################################################
 //                                     PLATAFORMA DE TRANSPORTE
 // #############################################################################################
