@@ -16,6 +16,13 @@ public class Vehicle
     public string? SerialNumber { get; set; }
     public byte PeopleCapacity { get; set; }
     public Driver? Owner { get; set; }
+    public List<Vehicle> vehicles = new List<Vehicle>()
+    {
+        new Vehicle
+        (
+            
+        )
+    };
 
 
 

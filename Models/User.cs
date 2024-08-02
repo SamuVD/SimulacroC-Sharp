@@ -22,9 +22,17 @@ public class User
 
 
     // Constructor propio de la clase
-    protected User()
+    protected User(string _name, string _lastName, string _typeDocument, string _identificationNumber, DateOnly _birthDate, string _email, string _phoneNumber, string _adreess)
     {
-
+        Id = Guid.NewGuid();
+        Name = _name;
+        LastName = _lastName;
+        TypeDocument = _typeDocument;
+        IdentificationNumber = _identificationNumber;
+        BirthDate = _birthDate;
+        Email = _email;
+        PhoneNumber = _phoneNumber;
+        Adreess = _adreess;
     }
 
 
@@ -39,10 +47,10 @@ public class User
     }
 
     // Método para calcular la edad del usuario
-    protected int CalculateAge()
-    {
+    // protected int CalculateAge()
+    // {
 
-    }
+    // }
 
     // Método para mostrar la edad del usuario
     protected void ShowAge()
