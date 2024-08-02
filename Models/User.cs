@@ -33,13 +33,13 @@ public class User
 
 
     // Método para mostrar los detalles de cada usuario
-    public void ShowDetails()
+    protected void ShowDetails()
     {
 
     }
 
     // Método para calcular la edad del usuario
-    public int CalculateAge()
+    protected int CalculateAge()
     {
 
     }
