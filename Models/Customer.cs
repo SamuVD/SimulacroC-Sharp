@@ -84,7 +84,20 @@ public class Customer : User
   // ToString
   public override string ToString()
   {
-    return $"\nNombre: {Name}, Apellido: {LastName}, Tipo de documento: {TypeDocument}, Número de identificación: {IdentificationNumber}, Fecha de nacimiento: {BirthDate}, Correo electrónico: {Email}, Teléfono: {PhoneNumber}, Dirección: {Adreess}, Nivel de membresía: {MembershipLevel}, Método de pago preferido: {PreferredPaymentMethod}";
+    return @$"
+################################################################################ 
+
+Nombre: {Name}
+Apellido: {LastName}
+Tipo de documento: {TypeDocument}
+Número de identificación: {IdentificationNumber}
+Fecha de nacimiento: {BirthDate}, Correo electrónico: {Email}
+Edad: {ShowAgeCalculated()}
+Teléfono: {PhoneNumber}
+Dirección: {Adreess}
+Nivel de membresía: {MembershipLevel}
+Método de pago preferido: {PreferredPaymentMethod}";
+
   }
 
 
@@ -103,7 +116,7 @@ public class Customer : User
 
 
   // Método para actualizar la memebresía
-  public void UpdateMembershipLevel()
+  public static void UpdateMembershipLevel()
   {
     Console.Write("\nIngrese el nombre del cliente para el cual desea modificar el nivel de membresía => ");
     string customerNameLevel = Console.ReadLine().ToLower();
