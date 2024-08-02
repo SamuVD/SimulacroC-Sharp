@@ -10,14 +10,14 @@ public class User
 
     // Propiedades o atributos
     protected Guid Id;
-    protected string? Name { get; set; };
-    protected string? LastName { get; set; };
-    protected string? TypeDocument { get; set; };
-    protected string? IdentificationNumber { get; set; };
-    protected DateOnly BirthDate { get; set; };
-    protected string? Email { get; set; };
-    protected string? PhoneNumber { get; set; };
-    protected string? Adreess { get; set; };
+    protected string? Name { get; set; }
+    protected string? LastName { get; set; }
+    protected string? TypeDocument { get; set; }
+    protected string? IdentificationNumber { get; set; }
+    protected DateOnly BirthDate { get; set; }
+    protected string? Email { get; set; }
+    protected string? PhoneNumber { get; set; }
+    protected string? Adreess { get; set; }
 
 
 
